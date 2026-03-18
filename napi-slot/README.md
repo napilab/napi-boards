@@ -7,7 +7,15 @@ optimized for audio processing, voice interfaces, and lightweight industrial I/O
 
 ![](img/napislot-2.jpeg)
 
+
+## Napi-Slot software
+
+All device tree sources, overlays, and software images are identical to Napi-C — see the [Napi-C](/napic/README.md) repository for details.
+
+
 ## Napi-Slot GPIO
+
+>GPIO table in [PDF](/napi-slot/gpio/NapiSOM-rev02%20.pdf)
 
 ![](img/napislot-gpio.jpeg)
 
@@ -17,7 +25,7 @@ optimized for audio processing, voice interfaces, and lightweight industrial I/O
 |------------------|----------------------------------------|
 | SoC              | Rockchip RK3308 (4× Cortex-A35, 1.3 GHz) |
 | RAM              | 512 MB DDR3                      |
-| Storage          | 4Гб SDNAND \ eMMC 8/16/32 GB + microSD                |
+| Storage          | 32Гб eMMC + microSD                |
 | Ethernet         | 1× 100 Mbit                           |
 | USB              | 1× USB 2.0 Host, 1× USB 2.0 OTG       |
 | Audio            | I2S, PDM microphone array              |
@@ -32,7 +40,7 @@ optimized for audio processing, voice interfaces, and lightweight industrial I/O
 ## Contents
 
 ```
-napic/
+napip/
 ├── dts/            # Base DTS (rk3308-napic.dts)
 ├── overlays/       # DT overlays for optional interfaces
 ├── gpio/           # 26-pin header pinout
@@ -40,20 +48,16 @@ napic/
 └── examples/       # Code and config examples
 ```
 
-## Getting Started
+## Extra boards
 
-1. Flash Armbian image
-2. Boot the board
-3. Enable overlays in `/boot/armbianEnv.txt`:
+Develop board 
 
-```bash
-overlays=rk3308-napic-i2c1 rk3308-napic-spi0
-```
+![](img/napi-slot-extra.jpeg)
 
-4. Reboot
+![](img/som-in-devb.jpg)
 
-## Links
+### EXtra board pinout
 
-- [GPIO Pinout](./gpio/README.md)
-- [Overlays](./overlays/README.md)
-- [Board Comparison](../docs/comparison.md)
+![](img/napi-s-plate-1.jpg)
+
+![](img/napi-s-plate-pinout.jpg)
