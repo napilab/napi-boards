@@ -60,7 +60,8 @@ NAPI2 is a compact industrial SBC designed for:
 | Power     | 5V (IN/OUT), 3.3V (OUT)                            |
 | Signals   | 3× UART, CAN, 2× SPI, 2× I2C, USB 2.0            |
 
-![](img/napi2-gpio-map.jpg)
+
+![](img/npi2-gpio-map.jpg)
 
 ### On-Board Connectors
 

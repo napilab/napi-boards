@@ -1,14 +1,15 @@
-# NAPI-C (NAPI-P, NAPI-Slot) — Compact SBCs on RK3308
+# NAPI-Slot — Compact SOM on RK3308
 
 NAPIC is a compact single-board computer based on the **Rockchip RK3308** SoC,
 optimized for audio processing, voice interfaces, and lightweight industrial I/O.
 
-## NAPI-C
+## Napi-Slot
 
-![](img/napicp.png)
+![](img/napislot-2.jpeg)
 
-## NAPI-C, NAPI-P GPIO
-![](img/napi-c-p-gpio-ext.jpg)
+## Napi-Slot GPIO
+
+![](img/napislot-gpio.jpeg)
 
 ## Hardware Specifications
 
