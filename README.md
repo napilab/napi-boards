@@ -3,27 +3,22 @@
 This repository contains device trees, overlays, GPIO pinouts, Armbian build configs,
 and usage examples for the **NAPI** and **NAPI2** industrial single-board computers.
 
+
+## Documentation
+
+- [NAPI2 Overview](./napi2/README.md)
+- [NAPI-C\NAPI-P Overview](./napic/README.md)
+- [NAPI-Slot Overview](./napi-slot/README.md)
+- [Board Comparison](./docs/comparison.md)
+
 ## Boards
 
 | Board  | SoC     | RAM   | Key Interfaces                        |
 |--------|---------|-------|---------------------------------------|
-| [NAPI2](./napi2/) | RK3568  | up to 8 GB | 2× GbE, RS485, CAN, PCIe, HDMI, LVDS |
-| [NAPIC](./napic/) | RK3308  | up to 512 MB | Audio, UART, I2C, SPI, GPIO           |
+| [NAPI2](./napi2/) | RK3568  | 4GB \ 32Gb  | 2× GbE, RS485, CAN, PCIe, HDMI, LVDS |
+| [NAPIC\NAPIP ](./napic/) | RK3308  |512 MB \ 4Gb | Audio, UART, I2C, SPI, GPIO           |
+| [NAPI-SLot](./napi-slot/) | RK3308  | 512 MB \ 32Gb | Audio, UART, I2C, SPI, GPIO           |
 
-## Quick Start
-
-```bash
-# Clone the repo
-git clone https://github.com/your-org/napi-boards.git
-cd napi-boards
-
-# Copy Armbian userpatches for your board (example: napi2)
-cp -r napi2/armbian/userpatches ~/arb/userpatches
-
-# Build image
-cd ~/arb
-./compile.sh BOARD=napi2 BRANCH=current BUILD_MINIMAL=no BUILD_DESKTOP=no
-```
 
 ## Repository Structure
 
@@ -39,13 +34,6 @@ napi-boards/
 │   └── ...         # Same structure
 └── docs/           # General documentation
 ```
-
-## Documentation
-
-- [NAPI2 Overview](./napi2/README.md)
-- [NAPIC Overview](./napic/README.md)
-- [Board Comparison](./docs/comparison.md)
-- [Building with Armbian](./docs/armbian-build.md)
 
 ## Topics
 
